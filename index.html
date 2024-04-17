@@ -58,7 +58,7 @@
 </head>
 <body>
   
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
    
     <div class="container p-1">
     
@@ -77,13 +77,15 @@
       
         </ul>
 
-         <ul class="navbar-nav  mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link fs-2  text-dark" style="font-family: roboto; font-weight: 500;" href="">
-              LOUIS VUITTON
-            </a>
-          </li>
-        </ul> 
+        <div>
+           <ul class="navbar-nav  mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fs-2  text-dark" style="font-family: roboto; font-weight: 500;" href="">
+                LOUIS VUITTON
+              </a>
+            </li>
+          </ul>
+        </div> 
         
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -98,6 +100,46 @@
       
         </ul>
         
+      </div>
+    
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg " style="background-color: rgb(248, 247, 245);">
+    <div class="container">
+      <a class="navbar-brand d-flex mt-3" href="#"><h3>LOUIS VUITTON</h3></a>
+     
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+        <!-- <ul class="navbar-nav ms-auto mb-lg-0 ml-5" >
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-3 " style="text-align: center;" href="#"></a>
+          </li> -->
+         
+         
+         
+        </ul>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
+          <li class="nav-item">
+            <a class="nav-link text-dark mx-2 " href="#"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark mx-2" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link text-dark mx-2 "><i class="fa-regular fa-heart"></i></a>
+          </li>
+          
+        </ul>
+
+
+        <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
       </div>
     </div>
   </nav>
@@ -158,11 +200,43 @@
       <p class="uu">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis fugit quibusdam iure praesentium. Dolor ducimus nihil,
          asperiores eligendi, quo saepe earum ipsum, reiciendis ad blanditiis eaque enim in voluptatem at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda alias nesciunt esse inventore consectetur similique explicabo sequi illo maiores, laborum ut, tenetur reiciendis 
          eaque nam error reprehenderit, vero labore quae.</p>
-         <button class="btn btn-primary rounded-20 mb-2 " style="border-radius:20px;">
-            Learn More
-         </button>
+         <button type="button" class="btn btn-primary rounded-20 mb-2" style="border-radius:20px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Shop Now
+        </button>
     </div>
     <div class="col-lg-5 "><img class="tt" src="./images/NAUTICAL.webp" alt=""></div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">LOGIN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <label for="d">Username</label>
+          <input class="border-0" type="text" id="d"><hr>
+          <label for="dd">password</label>
+          <input class="border-0" type="password" id="dd">
+          <hr>
+          <label for="ddd">address</label>
+         <textarea class="border-0" name="" id="ddd" cols="30" rows="5"></textarea>
+           <hr>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
   </div>
 </div>
 
